@@ -11,7 +11,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    /*public function register()
     {
         //
     }
@@ -23,6 +23,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Paginator::useBootstrap();
+        
+        //Paginator::useBootstrapFive();
+        //またはPaginator::useBootstrapFour();
     }
 }
