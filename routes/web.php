@@ -37,6 +37,7 @@ Route::get('/posts/{post}/edit', [PostController::class, 'edit']);
 
 Route::put('/posts/{post}', [PostController::class, 'update']);
 
+Route::delete('/posts/{post}', [PostController::class, 'delete']);
 //'/posts/{対象のデータのID}'にGetリクエストが来たら、PostControllerのshowメソッドを実行
 
 /*
